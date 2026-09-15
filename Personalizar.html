@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu site Responsivo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f1c392;
+        }
+
+        header{
+            background-color: #ff8000;
+            color: rgb(240, 240, 240);
+            text-align: center;
+            padding: 5vh 5%;
+        }
+
+        nav{
+            background-color: #a35c0b;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;            
+        }
+
+        main{
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .destaque{
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: #ce9335;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer{
+           background-color: #a35c0b;
+            color: white;
+            text-align: center;
+            padding: 4vh 5%;
+            font-size: 25px;
+        }
+
+
+        /* celular */
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+            }
+
+            .card{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <p>Um site simples sobre um brainrot musculoso</p>
+    </header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <main>
+      <section class="destaque">
+        <h2>Bem-vindo!</h2>
+
+        <p>Tudo sobre Udindindindun madindindindun</p>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h2>Características</h2>
+          <li>
+              É uma laranja bombada com corpo de gente
+          </li>
+          <li>Virou mutante após encostar em lixo tóxico</li>
+          <li>Usa tênis da Nike</li>
+          <li>É muito bravo e forte</li>
+          <h2>Do que ele gosta</h2>
+          <li>Fazer musculação na academia</li>
+          <li>Comer laranjas</li>
+          <li>Ostentar tênis caros</li>
+          <li>Mostrar a sua força.</li>
+
+        </div>
+
+        <div class="card">
+          <h2>História</h2>
+          <p>          <p><img src="undidindinudu.png" alt=""></p></p>
+        </div>
+
+        <div class="card">
+          <h2>Sua História</h2>
+          <p>Odin era um homem comum que virou um monstro após comer uma laranja contaminada por um líquido tóxico antigo. O veneno mudou o DNA dele na hora, transformando-o em um fisiculturista gigante com corpo de laranja. Ele perdeu a fala, passou a conseguir apenas repetir o som "Udindindindun... madindindindun..." e fugiu para viver escondido na floresta</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>Meu site - 2026</footer>
+  </body>
+</html>
